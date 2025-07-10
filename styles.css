@@ -512,122 +512,56 @@ a:hover {
     color: var(--text-white);
 }
 
-/* Custom Heart Icon with Heartbeat */
-.heart-icon {
+/* Custom Medical Cross Icon - Simple */
+.medical-cross-simple {
     position: relative;
     width: 80px;
     height: 80px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 4px;
 }
 
-.heart-shape {
-    position: relative;
-    width: 50px;
-    height: 45px;
-    transform: rotate(-45deg);
-}
-
-.heart-shape::before,
-.heart-shape::after {
-    content: '';
-    width: 26px;
-    height: 40px;
-    position: absolute;
-    left: 25px;
-    top: 0;
+.cross-square-simple {
+    width: 18px;
+    height: 18px;
     background: var(--text-white);
-    border-radius: 25px 25px 0 0;
-    transform: rotate(-45deg);
-    transform-origin: 0 100%;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.heart-shape::after {
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin: 100% 100%;
+.cross-top {
+    background: var(--primary-color) !important;
 }
 
-.heart-left,
-.heart-right,
-.heart-bottom {
-    position: absolute;
-    background-color: var(--text-white);
+.cross-middle {
+    background: var(--primary-light) !important;
 }
 
-.heart-left {
-    width: 20px;
-    height: 30px;
-    border-radius: 20px 20px 0 0;
-    top: 0;
-    left: 5px;
-    transform: rotate(-45deg);
+.cross-bottom {
+    background: var(--secondary-color) !important;
 }
 
-.heart-right {
-    width: 20px;
-    height: 30px;
-    border-radius: 20px 20px 0 0;
-    top: 0;
-    right: 5px;
-    transform: rotate(45deg);
-}
-
-.heart-bottom {
-    width: 20px;
-    height: 20px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-}
-
-.heartbeat-line {
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 2px;
-    background-color: var(--text-white);
-    opacity: 0.8;
-}
-
-.heartbeat-line::before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
-    border-bottom: 16px solid var(--text-white);
-    animation: heartbeat 2s infinite;
-}
-
-.heartbeat-line::after {
-    content: '';
-    position: absolute;
-    right: 20px;
-    top: -4px;
-    width: 0;
-    height: 0;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
-    border-bottom: 8px solid var(--text-white);
-    animation: heartbeat 2s infinite 0.2s;
-}
-
-@keyframes heartbeat {
-    0%, 100% {
-        opacity: 0.8;
-        transform: scaleY(1);
+/* Pulse animation for medical cross */
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
     }
     50% {
-        opacity: 1;
-        transform: scaleY(1.5);
+        opacity: 0.8;
+        transform: scale(1.05);
     }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.medical-cross-simple {
+    animation: pulse 3s ease-in-out infinite;
 }
 
 .section-header {
