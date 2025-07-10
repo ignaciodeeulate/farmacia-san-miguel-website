@@ -521,6 +521,8 @@ a:hover {
     object-position: center;
     border-radius: var(--border-radius);
     transition: var(--transition);
+    display: block;
+    margin: 0 auto;
 }
 
 .product-image img:hover {
@@ -567,27 +569,19 @@ a:hover {
 }
 
 .product-stock {
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    padding: 4px 8px;
-    border-radius: var(--border-radius-small);
-    display: inline-block;
+    display: none !important;
 }
 
 .stock-available {
-    background-color: #d4edda;
-    color: #155724;
+    display: none !important;
 }
 
 .stock-low {
-    background-color: #fff3cd;
-    color: #856404;
+    display: none !important;
 }
 
 .stock-out {
-    background-color: #f8d7da;
-    color: #721c24;
+    display: none !important;
 }
 
 .product-actions {
