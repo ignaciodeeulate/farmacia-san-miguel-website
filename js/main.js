@@ -18,7 +18,7 @@ const PharmacyApp = {
         this.initializeScrollEffects();
         this.initializeMobileMenu();
         this.initializeOnlineStatus();
-        this.initializeServiceWorker();
+        // Service Worker removed - was causing 404 errors
         this.initializeLazyLoading();
         
         // Check for saved user session
@@ -118,18 +118,8 @@ const PharmacyApp = {
         });
     },
     
-    // Initialize service worker for offline functionality
-    initializeServiceWorker() {
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
-                .then(registration => {
-                    console.log('Service Worker registered:', registration);
-                })
-                .catch(error => {
-                    console.log('Service Worker registration failed:', error);
-                });
-        }
-    },
+    // Service Worker functionality removed to prevent 404 errors
+    // Can be re-enabled when sw.js file is created
     
     // Initialize lazy loading for images
     initializeLazyLoading() {
