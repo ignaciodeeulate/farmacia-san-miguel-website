@@ -84,16 +84,12 @@ class ProductManager {
             <div class="product-card" data-category="${product.category}">
                 <div class="product-image">
                     <img src="${product.image}" alt="${product.name}" loading="lazy">
-                    <div class="product-badge ${product.inStock ? 'in-stock' : 'out-of-stock'}">
-                        ${product.inStock ? 'En Stock' : 'Agotado'}
-                    </div>
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">${product.name}</h3>
                     <p class="product-description">${product.description}</p>
                     <div class="product-price">€${product.price.toFixed(2)}</div>
-                    <div class="product-stock">Stock: ${product.stock}</div>
-                    <button class="btn btn-primary product-btn" 
+                    <button class="btn btn-primary product-btn"
                             onclick="productManager.addToCart(${product.id})"
                             ${!product.inStock ? 'disabled' : ''}>
                         <i class="fas fa-shopping-cart"></i>
