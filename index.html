@@ -3,37 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmacia - Tu farmacia de confianza</title>
+    <title>Farmacia San Miguel - Tu salud, nuestra prioridad</title>
+    <meta name="description" content="Farmacia de confianza con más de 20 años cuidando de tu bienestar. Productos de calidad, servicios profesionales y atención personalizada.">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Language Selector -->
-    <div class="language-bar">
-        <div class="container">
-            <div class="language-selector">
-                <button class="lang-btn active" data-lang="es">
-                    <i class="fas fa-globe"></i> Español
-                </button>
-                <button class="lang-btn" data-lang="eu">
-                    <i class="fas fa-globe"></i> Euskera
-                </button>
-                <button class="lang-btn" data-lang="en">
-                    <i class="fas fa-globe"></i> English
-                </button>
-            </div>
-        </div>
-    </div>
-
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
                     <div class="medical-cross">
                         <div class="cross-square cross-vertical"></div>
                         <div class="cross-square cross-horizontal"></div>
@@ -42,73 +26,72 @@
                     <span data-translate="pharmacy_name">Farmacia San Miguel</span>
                 </div>
                 
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#home" data-translate="nav_home">Inicio</a></li>
-                        <li><a href="#products" data-translate="nav_products">Productos</a></li>
-                        <li><a href="#services" data-translate="nav_services">Servicios</a></li>
-                        <li><a href="#appointments" data-translate="nav_appointments">Citas</a></li>
-                        <li><a href="#contact" data-translate="nav_contact">Contacto</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-actions">
-                    <button class="btn-icon" id="search-btn">
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link" data-translate="nav_home">Inicio</a>
+                    <a href="#products" class="nav-link" data-translate="nav_products">Productos</a>
+                    <a href="#services" class="nav-link" data-translate="nav_services">Servicios</a>
+                    <a href="#appointments" class="nav-link" data-translate="nav_appointments">Citas</a>
+                    <a href="#contact" class="nav-link" data-translate="nav_contact">Contacto</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="es">ES</button>
+                        <button class="lang-btn" data-lang="eu">EU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    
+                    <!-- Search Button -->
+                    <button class="nav-btn" id="search-btn" title="Buscar productos">
                         <i class="fas fa-search"></i>
                     </button>
-                    <button class="btn-icon cart-btn" id="cart-btn">
+                    
+                    <!-- Cart Button -->
+                    <button class="nav-btn" id="cart-btn" title="Carrito de compras">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count">0</span>
                     </button>
-                    <button class="btn-icon" id="user-btn">
+                    
+                    <!-- Login Button -->
+                    <button class="nav-btn" id="login-btn" title="Iniciar sesión">
                         <i class="fas fa-user"></i>
                     </button>
-                    <div class="loyalty-points" id="loyalty-display">
-                        <i class="fas fa-star"></i>
-                        <span id="user-points">0</span>
-                    </div>
                 </div>
-
-                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
+    <section id="home" class="hero">
+        <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1 data-translate="hero_title">Tu salud, nuestra prioridad</h1>
-                    <p data-translate="hero_subtitle">Farmacia de confianza con más de 30 años cuidando de tu bienestar. Productos de calidad, servicios profesionales y atención personalizada.</p>
-                    <div class="hero-actions">
-                        <button class="btn btn-primary" data-translate="hero_shop_now">Comprar Ahora</button>
-                        <button class="btn btn-secondary" data-translate="hero_book_appointment">Reservar Cita</button>
-                    </div>
+                <h1 class="hero-title" data-translate="hero_title">Tu salud, nuestra prioridad</h1>
+                <p class="hero-subtitle" data-translate="hero_subtitle">Farmacia de confianza con más de 30 años cuidando de tu bienestar. Productos de calidad, servicios profesionales y atención personalizada.</p>
+                
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="scrollToSection('products')" data-translate="hero_shop_now">Comprar Ahora</button>
+                    <button class="btn btn-outline" onclick="openAppointmentModal()" data-translate="hero_book_appointment">Reservar Cita</button>
                 </div>
-                <div class="hero-image">
-                    <div class="hero-card">
-                        <div class="hero-card-icon">
-                            <div class="medical-cross-simple">
-                                <div class="cross-square-simple cross-top"></div>
-                                <div class="cross-square-simple cross-middle"></div>
-                                <div class="cross-square-simple cross-bottom"></div>
-                            </div>
-                        </div>
-                        <div class="hero-card-content">
-                            <h3 data-translate="hero_card_title">Servicios de Salud</h3>
-                            <p data-translate="hero_card_desc">Medición de presión arterial, consultas nutricionales y más</p>
-                        </div>
-                    </div>
+            </div>
+            
+            <div class="hero-card">
+                <div class="hero-card-icon">
+                    <i class="fas fa-heartbeat"></i>
                 </div>
+                <h3 data-translate="hero_card_title">Servicios de Salud</h3>
+                <p data-translate="hero_card_desc">Medición de presión arterial, consultas nutricionales y más</p>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
+    <section id="services" class="services">
         <div class="container">
             <div class="section-header">
                 <h2 data-translate="services_title">Nuestros Servicios</h2>
@@ -118,22 +101,22 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-truck"></i>
+                        <i class="fas fa-mouse-pointer"></i>
                     </div>
                     <h3 data-translate="service_click_collect">Click & Collect</h3>
                     <p data-translate="service_click_collect_desc">Haz tu pedido online y recógelo cuando te convenga</p>
-                    <button class="btn btn-outline" data-translate="service_learn_more">Saber Más</button>
+                    <button class="btn btn-outline" onclick="scrollToSection('products')" data-translate="service_learn_more">Saber Más</button>
                 </div>
-
+                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-stethoscope"></i>
+                        <i class="fas fa-heartbeat"></i>
                     </div>
                     <h3 data-translate="service_blood_pressure">Medición de Presión</h3>
                     <p data-translate="service_blood_pressure_desc">Control profesional de tu presión arterial</p>
                     <button class="btn btn-outline" onclick="openAppointmentModal('blood-pressure')" data-translate="service_book_now">Reservar</button>
                 </div>
-
+                
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-apple-alt"></i>
@@ -142,7 +125,7 @@
                     <p data-translate="service_nutrition_desc">Planes personalizados de alimentación saludable</p>
                     <button class="btn btn-outline" onclick="openAppointmentModal('nutrition')" data-translate="service_book_now">Reservar</button>
                 </div>
-
+                
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-user-md"></i>
@@ -156,53 +139,60 @@
     </section>
 
     <!-- Products Section -->
-    <section class="products" id="products">
+    <section id="products" class="products">
         <div class="container">
             <div class="section-header">
                 <h2 data-translate="products_title">Productos Destacados</h2>
-                <div class="product-filters">
-                    <button class="filter-btn active" data-category="all" data-translate="filter_all">Todos</button>
-                    <button class="filter-btn" data-category="otc" data-translate="filter_otc">Sin Receta</button>
-                    <button class="filter-btn" data-category="vitamins" data-translate="filter_vitamins">Vitaminas</button>
-                    <button class="filter-btn" data-category="skincare" data-translate="filter_skincare">Cuidado Personal</button>
-                    <button class="filter-btn" data-category="baby" data-translate="filter_baby">Bebé</button>
-                </div>
             </div>
-
+            
+            <!-- Product Filters -->
+            <div class="product-filters">
+                <button class="filter-btn active" data-category="all" data-translate="filter_all">Todos</button>
+                <button class="filter-btn" data-category="otc" data-translate="filter_otc">Sin Receta</button>
+                <button class="filter-btn" data-category="vitamins" data-translate="filter_vitamins">Vitaminas</button>
+                <button class="filter-btn" data-category="skincare" data-translate="filter_skincare">Cuidado Personal</button>
+                <button class="filter-btn" data-category="baby" data-translate="filter_baby">Bebé</button>
+            </div>
+            
+            <!-- Products Grid -->
             <div class="products-grid" id="products-grid">
-                <!-- Products will be loaded dynamically -->
-            </div>
-
-            <div class="text-center">
-                <button class="btn btn-primary" data-translate="view_all_products">Ver Todos los Productos</button>
+                <!-- Products will be dynamically loaded here -->
             </div>
         </div>
     </section>
 
     <!-- Loyalty Program Section -->
-    <section class="loyalty-program">
+    <section class="loyalty">
         <div class="container">
+            <div class="section-header">
+                <h2 data-translate="loyalty_title">Programa de Fidelidad</h2>
+                <p data-translate="loyalty_subtitle">Gana puntos con cada compra y disfruta de beneficios exclusivos</p>
+            </div>
+            
             <div class="loyalty-content">
-                <div class="loyalty-text">
-                    <h2 data-translate="loyalty_title">Programa de Fidelidad</h2>
-                    <p data-translate="loyalty_subtitle">Gana puntos con cada compra y disfruta de beneficios exclusivos</p>
+                <div class="loyalty-tiers">
+                    <div class="tier-card bronze">
+                        <div class="tier-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 data-translate="tier_bronze">Bronce</h3>
+                        <p data-translate="tier_bronze_desc">0-99 puntos</p>
+                    </div>
                     
-                    <div class="loyalty-tiers">
-                        <div class="tier bronze">
+                    <div class="tier-card silver">
+                        <div class="tier-icon">
                             <i class="fas fa-medal"></i>
-                            <h4 data-translate="tier_bronze">Bronce</h4>
-                            <p data-translate="tier_bronze_desc">0-99 puntos</p>
                         </div>
-                        <div class="tier silver">
-                            <i class="fas fa-medal"></i>
-                            <h4 data-translate="tier_silver">Plata</h4>
-                            <p data-translate="tier_silver_desc">100-499 puntos</p>
+                        <h3 data-translate="tier_silver">Plata</h3>
+                        <p data-translate="tier_silver_desc">100-499 puntos</p>
+                    </div>
+                    
+                    <div class="tier-card gold">
+                        <div class="tier-icon">
+                            <i class="fas fa-crown"></i>
                         </div>
-                        <div class="tier gold">
-                            <i class="fas fa-medal"></i>
-                            <h4 data-translate="tier_gold">Oro</h4>
-                            <p data-translate="tier_gold_desc">500+ puntos</p>
-                        </div>
+                        <h3 data-translate="tier_gold">Oro</h3>
+                        <p data-translate="tier_gold_desc">500+ puntos</p>
                     </div>
                 </div>
                 
@@ -216,6 +206,21 @@
                     </ul>
                 </div>
             </div>
+            
+            <!-- User Loyalty Status (will be shown when logged in) -->
+            <div class="user-loyalty-status" id="user-loyalty-status" style="display: none;">
+                <div class="loyalty-card">
+                    <h4>Tu Estado de Fidelidad</h4>
+                    <div class="loyalty-points">
+                        <span class="points-count" id="user-points">0</span>
+                        <span>puntos</span>
+                    </div>
+                    <div class="loyalty-tier" id="user-tier">Bronce</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="loyalty-progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -224,22 +229,13 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="logo">
-                        <div class="medical-cross">
-                            <div class="cross-square cross-vertical"></div>
-                            <div class="cross-square cross-horizontal"></div>
-                            <div class="cross-square cross-center"></div>
-                        </div>
+                    <div class="footer-brand">
+                        <i class="fas fa-pills"></i>
                         <span data-translate="pharmacy_name">Farmacia San Miguel</span>
                     </div>
-                    <p data-translate="footer_description">Tu farmacia de confianza en Pamplona desde 1992. Comprometidos con tu salud y bienestar.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+                    <p data-translate="footer_description">Tu farmacia de confianza desde 1992. Comprometidos con tu salud y bienestar.</p>
                 </div>
-
+                
                 <div class="footer-section">
                     <h4 data-translate="footer_services">Servicios</h4>
                     <ul>
@@ -249,29 +245,29 @@
                         <li><a href="#" data-translate="footer_loyalty">Programa de Fidelidad</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="footer-section">
                     <h4 data-translate="footer_contact">Contacto</h4>
                     <div class="contact-info">
                         <p><i class="fas fa-map-marker-alt"></i> Calle Sangüesa, 39, 31005 Pamplona</p>
                         <p><i class="fas fa-phone"></i> +34 948 591 104</p>
                         <p><i class="fas fa-phone"></i> +34 689 969 648</p>
-                        <p><i class="fas fa-envelope"></i> farmacia@sanmiguel-pamplona.com</p>
+                        <p><i class="fas fa-envelope"></i> info@farmaciasanmiguel.com</p>
                     </div>
                 </div>
-
+                
                 <div class="footer-section">
                     <h4 data-translate="footer_hours">Horarios</h4>
-                    <div class="hours">
+                    <div class="hours-info">
                         <p data-translate="hours_weekdays">Lun-Vie: 9:00 - 21:00</p>
                         <p data-translate="hours_saturday">Sábado: 9:00 - 14:00</p>
                         <p data-translate="hours_sunday">Domingo: Cerrado</p>
                     </div>
                 </div>
             </div>
-
+            
             <div class="footer-bottom">
-                <p>&copy; 2025 Farmacia San Miguel. <span data-translate="footer_rights">Todos los derechos reservados.</span></p>
+                <p>&copy; 2024 <span data-translate="pharmacy_name">Farmacia San Miguel</span>. <span data-translate="footer_rights">Todos los derechos reservados.</span></p>
                 <div class="footer-links">
                     <a href="#" data-translate="footer_privacy">Política de Privacidad</a>
                     <a href="#" data-translate="footer_terms">Términos y Condiciones</a>
@@ -282,44 +278,45 @@
     </footer>
 
     <!-- Modals -->
+    
     <!-- Cart Modal -->
-    <div class="modal" id="cart-modal">
+    <div id="cart-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 data-translate="cart_title">Carrito de Compras</h3>
-                <button class="modal-close" onclick="closeModal('cart-modal')">
+                <button class="modal-close" onclick="cartManager.closeCart()">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="modal-body">
-                <div id="cart-items">
-                    <!-- Cart items will be loaded here -->
+                <div id="cart-items" class="cart-items">
+                    <!-- Cart items will be dynamically loaded here -->
                 </div>
                 <div class="cart-summary">
                     <div class="cart-total">
-                        <span data-translate="cart_total">Total: </span>
+                        <span data-translate="cart_total">Total:</span>
                         <span id="cart-total-amount">€0.00</span>
                     </div>
                     <div class="loyalty-points-earned">
                         <i class="fas fa-star"></i>
-                        <span data-translate="points_to_earn">Puntos a ganar: </span>
+                        <span data-translate="points_to_earn">Puntos a ganar:</span>
                         <span id="points-to-earn">0</span>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" onclick="closeModal('cart-modal')" data-translate="continue_shopping">Seguir Comprando</button>
+                <button class="btn btn-secondary" onclick="cartManager.closeCart()" data-translate="continue_shopping">Seguir Comprando</button>
                 <button class="btn btn-primary" onclick="proceedToCheckout()" data-translate="proceed_checkout">Proceder al Pago</button>
             </div>
         </div>
     </div>
 
     <!-- Appointment Modal -->
-    <div class="modal" id="appointment-modal">
+    <div id="appointment-modal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 data-translate="appointment_title">Reservar Cita</h3>
-                <button class="modal-close" onclick="closeModal('appointment-modal')">
+                <button class="modal-close" onclick="appointmentManager.closeAppointmentModal()">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -329,15 +326,15 @@
                         <label data-translate="appointment_service">Servicio:</label>
                         <select id="appointment-service" required>
                             <option value="" data-translate="select_service">Seleccionar servicio</option>
-                            <option value="blood-pressure" data-translate="service_blood_pressure">Medición de Presión</option>
-                            <option value="nutrition" data-translate="service_nutrition">Consulta Nutricional</option>
-                            <option value="consultation" data-translate="service_consultation">Consulta General</option>
+                            <option value="blood-pressure">Medición de Presión Arterial</option>
+                            <option value="nutrition">Consulta Nutricional</option>
+                            <option value="consultation">Consulta General</option>
                         </select>
                     </div>
                     
                     <div class="form-group">
                         <label data-translate="appointment_date">Fecha:</label>
-                        <input type="date" id="appointment-date" required>
+                        <input type="date" id="appointment-date" required onchange="appointmentManager.updateAvailableTimes()">
                     </div>
                     
                     <div class="form-group">
@@ -369,56 +366,26 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" onclick="closeModal('appointment-modal')" data-translate="cancel">Cancelar</button>
-                <button class="btn btn-primary" onclick="submitAppointment()" data-translate="book_appointment">Reservar Cita</button>
+                <button class="btn btn-secondary" onclick="appointmentManager.closeAppointmentModal()" data-translate="cancel">Cancelar</button>
+                <button class="btn btn-primary" onclick="appointmentManager.submitAppointment()" data-translate="book_appointment">Reservar Cita</button>
             </div>
         </div>
     </div>
 
-    <!-- Login Modal -->
-    <div class="modal" id="login-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 data-translate="login_title">Iniciar Sesión</h3>
-                <button class="modal-close" onclick="closeModal('login-modal')">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form id="login-form">
-                    <div class="form-group">
-                        <label data-translate="login_email">Email:</label>
-                        <input type="email" id="login-email" required>
-                    </div>
-                    <div class="form-group">
-                        <label data-translate="login_password">Contraseña:</label>
-                        <input type="password" id="login-password" required>
-                    </div>
-                    <div class="form-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="remember-me">
-                            <span data-translate="remember_me">Recordarme</span>
-                        </label>
-                    </div>
-                </form>
-                <div class="auth-links">
-                    <a href="#" data-translate="forgot_password">¿Olvidaste tu contraseña?</a>
-                    <a href="#" onclick="showRegisterForm()" data-translate="create_account">Crear cuenta</a>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" onclick="closeModal('login-modal')" data-translate="cancel">Cancelar</button>
-                <button class="btn btn-primary" onclick="submitLogin()" data-translate="login">Iniciar Sesión</button>
-            </div>
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Buscar productos..." id="search-input">
+            <div class="search-results" id="search-results"></div>
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="js/translations.js"></script>
-    <script src="js/products.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/appointments.js"></script>
-    <script src="js/loyalty.js"></script>
-    <script src="js/main.js"></script>
+    <!-- JavaScript Files -->
+    <script src="translations.js"></script>
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="appointments.js"></script>
+    <script src="loyalty.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

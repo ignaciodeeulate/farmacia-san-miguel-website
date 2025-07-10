@@ -11,7 +11,7 @@ const translations = {
         
         // Hero Section
         hero_title: "Tu salud, nuestra prioridad",
-        hero_subtitle: "Farmacia de confianza en Pamplona con más de 30 años cuidando de tu bienestar. Productos de calidad, servicios profesionales y atención personalizada.",
+        hero_subtitle: "Farmacia de confianza con más de 30 años cuidando de tu bienestar. Productos de calidad, servicios profesionales y atención personalizada.",
         hero_shop_now: "Comprar Ahora",
         hero_book_appointment: "Reservar Cita",
         hero_card_title: "Servicios de Salud",
