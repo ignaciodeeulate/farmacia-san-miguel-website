@@ -18,7 +18,7 @@ class ProductManager {
                 descriptionKey: "product_vitamin_c_desc",
                 price: 12.90,
                 category: "vitamins",
-                image: "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=400&h=400&fit=crop&crop=center&auto=format",
+                image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?w=400&h=400&fit=crop&crop=center&auto=format",
                 stock: 30,
                 inStock: true
             },
