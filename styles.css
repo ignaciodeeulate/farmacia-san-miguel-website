@@ -719,6 +719,197 @@ a:hover {
     transition: var(--transition);
 }
 
+/* New Loyalty Program Design */
+.loyalty-content-new {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.loyalty-tiers-new {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.tier-card-new {
+    background-color: var(--bg-primary);
+    border-radius: var(--border-radius-large);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-light);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.tier-card-new:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.tier-card-new.bronze-new {
+    border-top: 4px solid #cd7f32;
+}
+
+.tier-card-new.silver-new {
+    border-top: 4px solid #c0c0c0;
+}
+
+.tier-card-new.gold-new {
+    border-top: 4px solid #ffd700;
+}
+
+.tier-icon-new {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.tier-card-new.bronze-new .tier-icon-new {
+    color: #cd7f32;
+}
+
+.tier-card-new.silver-new .tier-icon-new {
+    color: #c0c0c0;
+}
+
+.tier-card-new.gold-new .tier-icon-new {
+    color: #ffd700;
+}
+
+.tier-card-new h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.tier-card-new p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.loyalty-benefits-new {
+    background-color: var(--bg-primary);
+    border-radius: var(--border-radius-large);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-light);
+    border: 1px solid var(--border-light);
+}
+
+.loyalty-benefits-new h3 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.benefits-list-new {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.benefit-item-new {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+}
+
+.benefit-check {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: rgba(74, 155, 142, 0.1);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.benefit-item-new span {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Responsive adjustments for new loyalty design */
+@media (max-width: 768px) {
+    .loyalty-content-new {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .loyalty-tiers-new {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .tier-card-new {
+        padding: 1.5rem;
+    }
+    
+    .tier-icon-new {
+        font-size: 2.5rem;
+        height: 60px;
+    }
+    
+    .loyalty-benefits-new {
+        padding: 2rem;
+    }
+    
+    .loyalty-benefits-new h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .loyalty-tiers-new {
+        gap: 0.75rem;
+    }
+    
+    .tier-card-new {
+        padding: 1.25rem;
+    }
+    
+    .tier-card-new h3 {
+        font-size: 1.25rem;
+    }
+    
+    .tier-card-new p {
+        font-size: 0.9rem;
+    }
+    
+    .loyalty-benefits-new {
+        padding: 1.5rem;
+    }
+    
+    .benefit-item-new {
+        gap: 0.75rem;
+        padding: 0.5rem 0;
+    }
+    
+    .benefit-item-new span {
+        font-size: 0.9rem;
+    }
+}
+
 /* Modals */
 .modal {
     display: none;
