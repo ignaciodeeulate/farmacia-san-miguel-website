@@ -160,13 +160,11 @@
                 <div class="product-card" data-category="otc">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop&crop=center" alt="Paracetamol 500mg" loading="lazy">
-                        <div class="product-badge in-stock">En Stock</div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Paracetamol 500mg</h3>
                         <p class="product-description">Analgésico y antipirético para dolor y fiebre</p>
                         <div class="product-price">€3.50</div>
-                        <div class="product-stock">Stock: 50</div>
                         <button class="btn btn-primary product-btn" onclick="productManager.addToCart(1)">
                             <i class="fas fa-shopping-cart"></i>
                             Añadir al Carrito
@@ -176,14 +174,12 @@
                 
                 <div class="product-card" data-category="vitamins">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=400&h=400&fit=crop&crop=center" alt="Vitamina C 1000mg" loading="lazy">
-                        <div class="product-badge in-stock">En Stock</div>
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop&crop=center&auto=format" alt="Vitamina C 1000mg" loading="lazy">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Vitamina C 1000mg</h3>
                         <p class="product-description">Suplemento vitamínico para reforzar el sistema inmune</p>
                         <div class="product-price">€12.90</div>
-                        <div class="product-stock">Stock: 30</div>
                         <button class="btn btn-primary product-btn" onclick="productManager.addToCart(2)">
                             <i class="fas fa-shopping-cart"></i>
                             Añadir al Carrito
@@ -194,13 +190,11 @@
                 <div class="product-card" data-category="skincare">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&h=400&fit=crop&crop=center" alt="Crema Hidratante" loading="lazy">
-                        <div class="product-badge in-stock">En Stock</div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Crema Hidratante</h3>
                         <p class="product-description">Crema hidratante para piel seca y sensible</p>
                         <div class="product-price">€8.75</div>
-                        <div class="product-stock">Stock: 25</div>
                         <button class="btn btn-primary product-btn" onclick="productManager.addToCart(3)">
                             <i class="fas fa-shopping-cart"></i>
                             Añadir al Carrito
@@ -211,13 +205,11 @@
                 <div class="product-card" data-category="baby">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=400&fit=crop&crop=center" alt="Pañales Bebé Talla 3" loading="lazy">
-                        <div class="product-badge in-stock">En Stock</div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Pañales Bebé Talla 3</h3>
                         <p class="product-description">Pañales ultra absorbentes para bebés de 6-10kg</p>
                         <div class="product-price">€15.99</div>
-                        <div class="product-stock">Stock: 20</div>
                         <button class="btn btn-primary product-btn" onclick="productManager.addToCart(4)">
                             <i class="fas fa-shopping-cart"></i>
                             Añadir al Carrito
@@ -228,13 +220,11 @@
                 <div class="product-card" data-category="otc">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&h=400&fit=crop&crop=center" alt="Ibuprofeno 400mg" loading="lazy">
-                        <div class="product-badge in-stock">En Stock</div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Ibuprofeno 400mg</h3>
                         <p class="product-description">Antiinflamatorio para dolor y inflamación</p>
                         <div class="product-price">€4.25</div>
-                        <div class="product-stock">Stock: 40</div>
                         <button class="btn btn-primary product-btn" onclick="productManager.addToCart(5)">
                             <i class="fas fa-shopping-cart"></i>
                             Añadir al Carrito
@@ -245,13 +235,11 @@
                 <div class="product-card" data-category="vitamins">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=400&fit=crop&crop=center" alt="Multivitamínico" loading="lazy">
-                        <div class="product-badge in-stock">En Stock</div>
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Multivitamínico</h3>
                         <p class="product-description">Complejo vitamínico completo para toda la familia</p>
                         <div class="product-price">€18.50</div>
-                        <div class="product-stock">Stock: 15</div>
                         <button class="btn btn-primary product-btn" onclick="productManager.addToCart(6)">
                             <i class="fas fa-shopping-cart"></i>
                             Añadir al Carrito
@@ -344,8 +332,9 @@
                 <div class="footer-section">
                     <div class="footer-brand">
                         <div class="medical-cross">
-                            <div class="cross-vertical"></div>
-                            <div class="cross-horizontal"></div>
+                            <div class="cross-square cross-vertical"></div>
+                            <div class="cross-square cross-horizontal"></div>
+                            <div class="cross-square cross-center"></div>
                         </div>
                         <span data-translate="pharmacy_name">Farmacia San Miguel</span>
                     </div>
@@ -497,11 +486,11 @@
     </div>
 
     <!-- JavaScript Files -->
-    <script src="js/translations.js?v=2024071204"></script>
-    <script src="js/products.js?v=2024071204"></script>
-    <script src="js/cart.js?v=2024071204"></script>
-    <script src="js/appointments.js?v=2024071204"></script>
-    <script src="js/loyalty.js?v=2024071204"></script>
-    <script src="js/main.js?v=2024071204"></script>
+    <script src="js/translations.js?v=2024071205"></script>
+    <script src="js/products.js?v=2024071205"></script>
+    <script src="js/cart.js?v=2024071205"></script>
+    <script src="js/appointments.js?v=2024071205"></script>
+    <script src="js/loyalty.js?v=2024071205"></script>
+    <script src="js/main.js?v=2024071205"></script>
 </body>
 </html>

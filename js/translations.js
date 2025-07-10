@@ -44,6 +44,20 @@ const translations = {
         low_stock: "Pocas Unidades",
         in_stock: "En Stock",
         
+        // Product names and descriptions
+        product_paracetamol_name: "Paracetamol 500mg",
+        product_paracetamol_desc: "Analgésico y antipirético para dolor y fiebre",
+        product_vitamin_c_name: "Vitamina C 1000mg",
+        product_vitamin_c_desc: "Suplemento vitamínico para reforzar el sistema inmune",
+        product_moisturizer_name: "Crema Hidratante",
+        product_moisturizer_desc: "Crema hidratante para piel seca y sensible",
+        product_diapers_name: "Pañales Bebé Talla 3",
+        product_diapers_desc: "Pañales ultra absorbentes para bebés de 6-10kg",
+        product_ibuprofen_name: "Ibuprofeno 400mg",
+        product_ibuprofen_desc: "Antiinflamatorio para dolor y inflamación",
+        product_multivitamin_name: "Multivitamínico",
+        product_multivitamin_desc: "Complejo vitamínico completo para toda la familia",
+        
         // Loyalty Program
         loyalty_title: "Programa de Fidelidad",
         loyalty_subtitle: "Gana puntos con cada compra y disfruta de beneficios exclusivos",
@@ -165,6 +179,20 @@ const translations = {
         low_stock: "Unitate Gutxi",
         in_stock: "Stockean",
         
+        // Product names and descriptions
+        product_paracetamol_name: "Paracetamol 500mg",
+        product_paracetamol_desc: "Mina eta sukarraren aurkako analgesikoa eta antipiretikoa",
+        product_vitamin_c_name: "C Bitamina 1000mg",
+        product_vitamin_c_desc: "Immune sistema indartzeko bitamina osagarria",
+        product_moisturizer_name: "Krema Hidratatzailea",
+        product_moisturizer_desc: "Azal lehor eta sentikorraren krema hidratatzailea",
+        product_diapers_name: "Haurren Zapi-oihalak 3. Neurria",
+        product_diapers_desc: "6-10kg-ko haurrentzako xurgapen handiko zapi-oihalak",
+        product_ibuprofen_name: "Ibuprofeno 400mg",
+        product_ibuprofen_desc: "Mina eta hanturarako antiinflamatorioa",
+        product_multivitamin_name: "Multibita",
+        product_multivitamin_desc: "Familia osorako bitamina konplexu osoa",
+        
         // Loyalty Program
         loyalty_title: "Leialtasun Programa",
         loyalty_subtitle: "Irabazi puntuak erosketa bakoitzarekin eta gozatu abantaila esklusiboekin",
@@ -285,6 +313,20 @@ const translations = {
         out_of_stock: "Out of Stock",
         low_stock: "Low Stock",
         in_stock: "In Stock",
+        
+        // Product names and descriptions
+        product_paracetamol_name: "Paracetamol 500mg",
+        product_paracetamol_desc: "Analgesic and antipyretic for pain and fever",
+        product_vitamin_c_name: "Vitamin C 1000mg",
+        product_vitamin_c_desc: "Vitamin supplement to strengthen the immune system",
+        product_moisturizer_name: "Moisturizing Cream",
+        product_moisturizer_desc: "Moisturizing cream for dry and sensitive skin",
+        product_diapers_name: "Baby Diapers Size 3",
+        product_diapers_desc: "Ultra-absorbent diapers for babies 6-10kg",
+        product_ibuprofen_name: "Ibuprofen 400mg",
+        product_ibuprofen_desc: "Anti-inflammatory for pain and inflammation",
+        product_multivitamin_name: "Multivitamin",
+        product_multivitamin_desc: "Complete vitamin complex for the whole family",
         
         // Loyalty Program
         loyalty_title: "Loyalty Program",
