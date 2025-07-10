@@ -7,7 +7,7 @@ class ProductManager {
                 name: "Paracetamol 500mg",
                 price: 3.50,
                 category: "otc",
-                image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=200&h=200&fit=crop&crop=center",
+                image: "https://cdn.pixabay.com/photo/2016/12/06/18/27/pills-1887710_960_720.jpg",
                 description: "Analgésico y antipirético para dolor y fiebre",
                 stock: 50,
                 inStock: true
@@ -17,7 +17,7 @@ class ProductManager {
                 name: "Vitamina C 1000mg",
                 price: 12.90,
                 category: "vitamins",
-                image: "https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=200&h=200&fit=crop&crop=center",
+                image: "https://cdn.pixabay.com/photo/2017/05/12/11/28/vitamin-c-2305618_960_720.jpg",
                 description: "Suplemento vitamínico para reforzar el sistema inmune",
                 stock: 30,
                 inStock: true
@@ -27,7 +27,7 @@ class ProductManager {
                 name: "Crema Hidratante",
                 price: 8.75,
                 category: "skincare",
-                image: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=200&h=200&fit=crop&crop=center",
+                image: "https://cdn.pixabay.com/photo/2016/07/11/15/43/woman-1509956_960_720.jpg",
                 description: "Crema hidratante para piel seca y sensible",
                 stock: 25,
                 inStock: true
@@ -37,7 +37,7 @@ class ProductManager {
                 name: "Pañales Bebé Talla 3",
                 price: 15.99,
                 category: "baby",
-                image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=200&h=200&fit=crop&crop=center",
+                image: "https://cdn.pixabay.com/photo/2017/11/23/07/47/diaper-2972784_960_720.jpg",
                 description: "Pañales ultra absorbentes para bebés de 6-10kg",
                 stock: 20,
                 inStock: true
@@ -47,7 +47,7 @@ class ProductManager {
                 name: "Ibuprofeno 400mg",
                 price: 4.25,
                 category: "otc",
-                image: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=200&h=200&fit=crop&crop=center",
+                image: "https://cdn.pixabay.com/photo/2015/07/02/20/57/pills-832193_960_720.jpg",
                 description: "Antiinflamatorio para dolor y inflamación",
                 stock: 40,
                 inStock: true
@@ -57,7 +57,7 @@ class ProductManager {
                 name: "Multivitamínico",
                 price: 18.50,
                 category: "vitamins",
-                image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=200&h=200&fit=crop&crop=center",
+                image: "https://cdn.pixabay.com/photo/2017/08/11/19/36/pill-2632670_960_720.jpg",
                 description: "Complejo vitamínico completo para toda la familia",
                 stock: 15,
                 inStock: true
