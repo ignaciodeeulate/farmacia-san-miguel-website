@@ -609,6 +609,38 @@ a:hover {
     text-align: center;
     gap: 8px;
     font-size: 0.95rem;
+    margin: 0 auto;
+}
+
+/* Product button centering - matches price centering approach */
+.product-btn {
+    width: 160px;
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    margin: 0 auto;
+}
+
+.product-btn:hover:not(:disabled) {
+    background-color: #218838;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-light);
+}
+
+.product-btn:disabled {
+    background-color: var(--text-light);
+    cursor: not-allowed;
 }
 
 .btn-add-cart:hover:not(:disabled) {
