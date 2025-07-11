@@ -99,13 +99,15 @@ class ProductManager {
                     <div class="product-info">
                         <h3 class="product-name" data-translate="${product.nameKey}">${productName}</h3>
                         <p class="product-description" data-translate="${product.descriptionKey}">${productDescription}</p>
-                        <div class="product-price">€${product.price.toFixed(2)}</div>
-                        <button class="btn btn-primary product-btn"
-                                onclick="productManager.addToCart(${product.id})"
-                                ${!product.inStock ? 'disabled' : ''}>
-                            <i class="fas fa-shopping-cart"></i>
-                            ${addToCartText}
-                        </button>
+                        <div class="product-actions">
+                            <div class="product-price">€${product.price.toFixed(2)}</div>
+                            <button class="btn btn-primary product-btn"
+                                    onclick="productManager.addToCart(${product.id})"
+                                    ${!product.inStock ? 'disabled' : ''}>
+                                <i class="fas fa-shopping-cart"></i>
+                                ${addToCartText}
+                            </button>
+                        </div>
                     </div>
                 </div>
             `;
