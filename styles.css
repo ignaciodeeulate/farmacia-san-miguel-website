@@ -590,12 +590,11 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .btn-add-cart {
-    width: auto;
-    min-width: 160px;
-    max-width: 200px;
+    width: 160px;
     background-color: var(--secondary-color);
     color: var(--text-white);
     border: none;
@@ -610,7 +609,6 @@ a:hover {
     text-align: center;
     gap: 8px;
     font-size: 0.95rem;
-    margin: 0 auto;
 }
 
 .btn-add-cart:hover:not(:disabled) {
