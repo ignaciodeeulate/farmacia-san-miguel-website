@@ -566,6 +566,7 @@ a:hover {
     font-weight: 700;
     color: var(--secondary-color);
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .product-stock {
@@ -586,6 +587,9 @@ a:hover {
 
 .product-actions {
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-add-cart {
