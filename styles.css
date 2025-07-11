@@ -557,8 +557,9 @@ a:hover {
 .product-description {
     color: var(--text-secondary);
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     line-height: 1.4;
+    min-height: 2.8rem;
 }
 
 .product-price {
