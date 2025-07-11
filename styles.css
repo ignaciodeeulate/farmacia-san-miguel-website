@@ -568,6 +568,7 @@ a:hover {
     margin-bottom: 0;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .product-stock {
@@ -593,6 +594,7 @@ a:hover {
     align-items: center;
     width: 100%;
     gap: 1rem;
+    flex-wrap: nowrap;
 }
 
 .btn-add-cart {
@@ -632,6 +634,8 @@ a:hover {
     font-size: 0.9rem;
     white-space: nowrap;
     flex-shrink: 0;
+    width: auto;
+    min-width: fit-content;
 }
 
 .product-btn:hover:not(:disabled) {
